@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_exemplo/tip_calculator.dart';
 
 void main() => runApp(const MyApp());
 
@@ -67,6 +68,14 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Text('a soma é $_soma'),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.push(context, 
+                MaterialPageRoute(
+                  builder: (context) => const TipCalculator()),
+                );
+              }, child: const Text('Calculadora de gorjeta')
+            ),
           ],
         ),
       ),
