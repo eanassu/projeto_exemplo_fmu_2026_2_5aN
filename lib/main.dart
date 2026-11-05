@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto_exemplo/desenho.dart';
 import 'package:projeto_exemplo/home_screen.dart';
+import 'package:projeto_exemplo/map_screen.dart';
 import 'package:projeto_exemplo/tip_calculator.dart';
 
 
@@ -110,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('Ir para Tarefas'),
             ),
-                        ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 // Navega para a Tela de Desenho
                 Navigator.push(
@@ -119,6 +120,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: const Text('Ir para Desenho'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navega para a Tela de Desenho
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MapScreen()),
+                );
+              },
+              child: const Text('Ir para Mapa'),
             ),
           ],
         ),
