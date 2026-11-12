@@ -1,0 +1,29 @@
+{
+  "name": "projeto_exemplo",
+  "version": "1.0.0",
+  "description": "A new Flutter project.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eanassu/projeto_exemplo_fmu_2026_2_5aN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eanassu/projeto_exemplo_fmu_2026_2_5aN/issues"
+  },
+  "homepage": "https://github.com/eanassu/projeto_exemplo_fmu_2026_2_5aN#readme",
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
+}
